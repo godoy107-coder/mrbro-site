@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 
   export default function Home() {
   return (
@@ -9,21 +10,34 @@
     }}>
 
       {/* HERO */}
-      <section style={{
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        textAlign: "center"
-      }}>
-        <h1 style={{ fontSize: "4rem", marginBottom: "1rem" }}>
-          MR BRO 🚀
-        </h1>
-        <p style={{ fontSize: "1.5rem", opacity: 0.7 }}>
-          The Community-Driven Meme Revolution
-        </p>
-      </section>
+<section style={{
+  height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center"
+}}>
+
+  <Image
+    src="/mrbro-logo.png"
+    alt="MR BRO Logo"
+    width={250}
+    height={250}
+    priority
+    style={{ marginBottom: "30px" }}
+  />
+
+  <h1 style={{ fontSize: "4rem", marginBottom: "1rem" }}>
+    MR BRO 🚀
+  </h1>
+
+  <p style={{ fontSize: "1.5rem", opacity: 0.7 }}>
+    The Community-Driven Meme Revolution
+  </p>
+
+</section>
+
 
       {/* CONTACT */}
       <section style={{
