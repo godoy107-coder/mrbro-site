@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export default function Home() {
@@ -8,33 +7,46 @@ export default function Home() {
         background: "#0a0a0a",
         color: "white",
         fontFamily: "sans-serif",
+        margin: 0,
       }}
     >
       {/* HERO */}
       <section
         style={{
-          height: "100vh",
+          minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
+          padding: "40px 20px",
         }}
       >
-        <Image
-          src="/mrbro-logo.png"
-          alt="MR BRO Logo"
-          width={250}
-          height={250}
-          priority
-          style={{ marginBottom: "30px" }}
-        />
+        <div
+          style={{
+            position: "relative",
+            width: "600px",
+            maxWidth: "90vw",
+            height: "600px",
+            marginBottom: "40px",
+          }}
+        >
+          <Image
+            src="/mrbro-logo.png"
+            alt="MR BRO Logo"
+            fill
+            priority
+            style={{
+              objectFit: "contain",
+            }}
+          />
+        </div>
 
-        <h1 style={{ fontSize: "4rem", marginBottom: "1rem" }}>
+        <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
           MR BRO 🚀
         </h1>
 
-        <p style={{ fontSize: "1.5rem", opacity: 0.7 }}>
+        <p style={{ fontSize: "1.3rem", opacity: 0.7 }}>
           The Community-Driven Meme Revolution
         </p>
       </section>
@@ -81,7 +93,7 @@ export default function Home() {
           fontSize: "0.9rem",
         }}
       >
-        © 2026 MR BRO. All rights reserved.
+        © {new Date().getFullYear()} MR BRO. All rights reserved.
       </footer>
     </main>
   );
