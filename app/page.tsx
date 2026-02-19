@@ -220,6 +220,46 @@ export default function Home() {
           </a>
         </p>
       </section>
+{/* COMMUNITY */}
+<section
+  style={{
+    padding: "80px 20px",
+    textAlign: "center",
+    borderTop: "1px solid #222",
+  }}
+>
+  <h2 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>
+    Community
+  </h2>
+
+  <a
+    href="https://t.me/mrbromeme"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "12px",
+      background: "#111",
+      padding: "12px 25px",
+      borderRadius: "8px",
+      textDecoration: "none",
+      color: "white",
+    }}
+  >
+    <div style={{ position: "relative", width: "24px", height: "24px" }}>
+      <Image
+        src="/telegram.png"
+        alt="Telegram"
+        fill
+        style={{ objectFit: "contain" }}
+      />
+    </div>
+
+    Join our Telegram
+  </a>
+</section>
+
 
       {/* FOOTER */}
       <footer
