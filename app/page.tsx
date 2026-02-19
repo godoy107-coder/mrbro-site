@@ -49,13 +49,11 @@ export default function Home() {
             alt="MR BRO Logo"
             fill
             priority
-            style={{
-              objectFit: "contain",
-            }}
+            style={{ objectFit: "contain" }}
           />
         </div>
 
-        {/* CONTRACT ADDRESS */}
+        {/* CONTRACT */}
         <div
           style={{
             background: "#111",
@@ -103,44 +101,43 @@ export default function Home() {
           The Community-Driven Meme Revolution
         </p>
       </section>
-{/* WHITEPAPER */}
-<section
-  style={{
-    padding: "80px 20px",
-    textAlign: "center",
-    borderTop: "1px solid #222",
-  }}
->
-  <h2 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>
-    Whitepaper
-  </h2>
 
-  <p style={{ opacity: 0.7, marginBottom: "40px" }}>
-    Explore the official documentation and project details.
-  </p>
+      {/* WHITEPAPER */}
+      <section
+        style={{
+          padding: "80px 20px",
+          textAlign: "center",
+          borderTop: "1px solid #222",
+        }}
+      >
+        <h2 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>
+          Whitepaper
+        </h2>
 
-  <a
-    href="https://drive.google.com/drive/folders/1yeW2p9BN53VCKRm-WGJekNQwOOd_YICp?usp=share_link"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{
-      display: "inline-block",
-      background: "#ffffff",
-      color: "#000",
-      padding: "14px 30px",
-      borderRadius: "8px",
-      fontWeight: "bold",
-      fontSize: "1.1rem",
-      textDecoration: "none",
-      transition: "all 0.3s ease",
-    }}
-  >
-    📄 View Whitepaper
-  </a>
-</section>
+        <p style={{ opacity: 0.7, marginBottom: "40px" }}>
+          Explore the official documentation and project details.
+        </p>
 
+        <a
+          href="https://drive.google.com/drive/folders/1yeW2p9BN53VCKRm-WGJekNQwOOd_YICp?usp=share_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            background: "#ffffff",
+            color: "#000",
+            padding: "14px 30px",
+            borderRadius: "8px",
+            fontWeight: "bold",
+            fontSize: "1.1rem",
+            textDecoration: "none",
+          }}
+        >
+          📄 View Whitepaper
+        </a>
+      </section>
 
-      {/* TRADE SECTION */}
+      {/* TRADE */}
       <section
         style={{
           padding: "80px 20px",
@@ -169,14 +166,12 @@ export default function Home() {
             fontWeight: "bold",
             fontSize: "1.1rem",
             textDecoration: "none",
-            transition: "all 0.3s ease",
             marginBottom: "40px",
           }}
         >
           🚀 Trade Now
         </a>
 
-        {/* GECKO LOGO */}
         <a
           href="https://www.geckoterminal.com/bsc/pools/0xc71ac83e5eecb5c81a84372c33fd87f0ca468312?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
           target="_blank"
@@ -198,6 +193,46 @@ export default function Home() {
         </a>
       </section>
 
+      {/* COMMUNITY */}
+      <section
+        style={{
+          padding: "80px 20px",
+          textAlign: "center",
+          borderTop: "1px solid #222",
+        }}
+      >
+        <h2 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>
+          Community
+        </h2>
+
+        <a
+          href="https://t.me/mrbromeme"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "12px",
+            background: "#111",
+            padding: "12px 25px",
+            borderRadius: "8px",
+            textDecoration: "none",
+            color: "white",
+          }}
+        >
+          <div style={{ position: "relative", width: "24px", height: "24px" }}>
+            <Image
+              src="/telegram.png"
+              alt="Telegram"
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+
+          Join our Telegram
+        </a>
+      </section>
+
       {/* CONTACT */}
       <section
         style={{
@@ -210,7 +245,7 @@ export default function Home() {
           Contact
         </h2>
 
-        <p style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
+        <p style={{ fontSize: "1.2rem" }}>
           📩 Email:
           <a
             href="mailto:mrbro@mrbro.com"
@@ -220,46 +255,6 @@ export default function Home() {
           </a>
         </p>
       </section>
-{/* COMMUNITY */}
-<section
-  style={{
-    padding: "80px 20px",
-    textAlign: "center",
-    borderTop: "1px solid #222",
-  }}
->
-  <h2 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>
-    Community
-  </h2>
-
-  <a
-    href="https://t.me/mrbromeme"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      gap: "12px",
-      background: "#111",
-      padding: "12px 25px",
-      borderRadius: "8px",
-      textDecoration: "none",
-      color: "white",
-    }}
-  >
-    <div style={{ position: "relative", width: "24px", height: "24px" }}>
-      <Image
-        src="/telegram.png"
-        alt="Telegram"
-        fill
-        style={{ objectFit: "contain" }}
-      />
-    </div>
-
-    Join our Telegram
-  </a>
-</section>
-
 
       {/* FOOTER */}
       <footer
@@ -275,4 +270,3 @@ export default function Home() {
     </main>
   );
 }
-
