@@ -1,6 +1,19 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(
+      "0xd2D731ab1C6b934914F660d8A4F611b732251142"
+    );
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <main
       style={{
@@ -42,6 +55,46 @@ export default function Home() {
           />
         </div>
 
+        {/* CONTRACT ADDRESS */}
+        <div
+          style={{
+            background: "#111",
+            padding: "12px 20px",
+            borderRadius: "10px",
+            marginBottom: "30px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "15px",
+            flexWrap: "wrap",
+          }}
+        >
+          <span
+            style={{
+              fontSize: "0.85rem",
+              opacity: 0.7,
+              wordBreak: "break-all",
+            }}
+          >
+            CA: 0xd2D731ab1C6b934914F660d8A4F611b732251142
+          </span>
+
+          <button
+            onClick={copyToClipboard}
+            style={{
+              background: "#4ade80",
+              color: "#000",
+              border: "none",
+              padding: "6px 12px",
+              borderRadius: "6px",
+              cursor: "pointer",
+              fontWeight: "bold",
+            }}
+          >
+            {copied ? "Copied ✓" : "Copy"}
+          </button>
+        </div>
+
         <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
           MR BRO 🚀
         </h1>
@@ -66,20 +119,20 @@ export default function Home() {
         <p style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
           📩 General:
           <a
-            href="mailto:mrbro@mrbro.org"
+            href="mailto:mrbro@mrbro.com"
             style={{ color: "#4ade80", marginLeft: "8px" }}
           >
-            mrbro@mrbro.org
+            mrbro@mrbro.com
           </a>
         </p>
 
         <p style={{ fontSize: "1.2rem" }}>
           📩 Business:
           <a
-            href="mailto:Godoy107@gmail.com"
+            href="mailto:mrbro@mrbro.com"
             style={{ color: "#4ade80", marginLeft: "8px" }}
           >
-            Godoy107@gmail.com
+            mrbro@mrbro.com
           </a>
         </p>
       </section>
@@ -98,3 +151,4 @@ export default function Home() {
     </main>
   );
 }
+
