@@ -104,6 +104,64 @@ export default function Home() {
         </p>
       </section>
 
+      {/* TRADE SECTION */}
+      <section
+        style={{
+          padding: "80px 20px",
+          textAlign: "center",
+          borderTop: "1px solid #222",
+        }}
+      >
+        <h2 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>
+          Trade MR BRO
+        </h2>
+
+        <p style={{ opacity: 0.7, marginBottom: "40px" }}>
+          View live chart, liquidity and trading activity.
+        </p>
+
+        <a
+          href="https://www.geckoterminal.com/bsc/pools/0xc71ac83e5eecb5c81a84372c33fd87f0ca468312?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            background: "#4ade80",
+            color: "#000",
+            padding: "14px 30px",
+            borderRadius: "8px",
+            fontWeight: "bold",
+            fontSize: "1.1rem",
+            textDecoration: "none",
+            transition: "all 0.3s ease",
+            marginBottom: "40px",
+          }}
+        >
+          🚀 Trade Now
+        </a>
+
+        {/* GECKO LOGO */}
+        <a
+          href="https://www.geckoterminal.com/bsc/pools/0xc71ac83e5eecb5c81a84372c33fd87f0ca468312?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "block",
+            margin: "0 auto",
+            width: "200px",
+            height: "80px",
+            position: "relative",
+          }}
+        >
+          <Image
+            src="/geckoterminal_dark.png"
+            alt="GeckoTerminal"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </a>
+      </section>
+
       {/* CONTACT */}
       <section
         style={{
@@ -117,17 +175,7 @@ export default function Home() {
         </h2>
 
         <p style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
-          📩 General:
-          <a
-            href="mailto:mrbro@mrbro.com"
-            style={{ color: "#4ade80", marginLeft: "8px" }}
-          >
-            mrbro@mrbro.com
-          </a>
-        </p>
-
-        <p style={{ fontSize: "1.2rem" }}>
-          📩 Business:
+          📩 Email:
           <a
             href="mailto:mrbro@mrbro.com"
             style={{ color: "#4ade80", marginLeft: "8px" }}
