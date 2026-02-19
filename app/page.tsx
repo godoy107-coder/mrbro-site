@@ -103,6 +103,42 @@ export default function Home() {
           The Community-Driven Meme Revolution
         </p>
       </section>
+{/* WHITEPAPER */}
+<section
+  style={{
+    padding: "80px 20px",
+    textAlign: "center",
+    borderTop: "1px solid #222",
+  }}
+>
+  <h2 style={{ fontSize: "2.5rem", marginBottom: "30px" }}>
+    Whitepaper
+  </h2>
+
+  <p style={{ opacity: 0.7, marginBottom: "40px" }}>
+    Explore the official documentation and project details.
+  </p>
+
+  <a
+    href="https://drive.google.com/drive/folders/1yeW2p9BN53VCKRm-WGJekNQwOOd_YICp?usp=share_link"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      background: "#ffffff",
+      color: "#000",
+      padding: "14px 30px",
+      borderRadius: "8px",
+      fontWeight: "bold",
+      fontSize: "1.1rem",
+      textDecoration: "none",
+      transition: "all 0.3s ease",
+    }}
+  >
+    📄 View Whitepaper
+  </a>
+</section>
+
 
       {/* TRADE SECTION */}
       <section
